@@ -46,7 +46,7 @@ class userInterface:
         self.inputBound = Entry(root, width=50, bg="light yellow", font=("Computer Modern", 12))
         self.inputBound.pack(pady=(2,10))
 
-        accuracyPrompt = Label(root, text="Sample of Interval", font=("Computer Modern", 15))
+        accuracyPrompt = Label(root, text="Sample Space", font=("Computer Modern", 15))
         accuracyPrompt.pack()
 
         self.inputAccuracy = Entry(root, width=50, bg="light yellow", font=("Computer Modern", 12))
@@ -82,8 +82,6 @@ class userInterface:
             messagebox.showerror("VALUE ERROR", "Please enter number only")
             return
         
-
-
         if (omegaR < 0 or omegaM < 0):
             messagebox.showerror("VALUE ERROR", "Radiation parameter and matter parameter must be greater than 0")
             return
